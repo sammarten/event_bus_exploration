@@ -1,4 +1,4 @@
-#This is a simple implementation of Event Bus in Elixir
+# This is a simple implementation of Event Bus in Elixir
 
 ## To Run
 
