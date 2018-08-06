@@ -1,0 +1,2 @@
+defmodule DistributedComponents do
+end
