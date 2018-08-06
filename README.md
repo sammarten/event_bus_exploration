@@ -1,21 +1,23 @@
-# DistributedComponents
+#This is a simple implementation of Event Bus in Elixir**
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `distributed_components` to your list of dependencies in `mix.exs`:
+## To Run
 
 ```elixir
-def deps do
-  [
-    {:distributed_components, "~> 0.1.0"}
-  ]
-end
+mix deps.get
+
+mix compile
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/distributed_components](https://hexdocs.pm/distributed_components).
+Once compiled, run ```iex -S mix``` to start the application in a command shell.
 
+At the command prompt, you can run these statements to send messages around the Event Bus.
+
+```elixir
+alias DistributedComponents.EventGenerator
+
+EventGenerator.one()
+
+EventGenerator.two()
+
+EventGenerator.three()
+```
